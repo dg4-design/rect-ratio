@@ -21,9 +21,10 @@ const App = () => {
 
       return percentageResult.map((pair) => {
         const color = `rgb(${~~(Math.random() * 255)}, ${~~(Math.random() * 255)}, ${~~(Math.random() * 255)})`;
+        const unit = window.innerWidth <= 768 ? 'vw' : 'vh';
         return {
-          height: `${pair[0]}vh`,
-          width: `${pair[1]}vh`,
+          height: `${pair[0]}${unit}`,
+          width: `${pair[1]}${unit}`,
           border: "2px solid",
           color: color,
         };
