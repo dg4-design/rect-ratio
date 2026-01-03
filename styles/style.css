@@ -58,9 +58,4 @@ body {
     outline: 2px solid #4a90e2;
     outline-offset: 2px;
   }
-
-  .output {
-    transform: scale(0.4);
-    transform-origin: center center;
-  }
 }
